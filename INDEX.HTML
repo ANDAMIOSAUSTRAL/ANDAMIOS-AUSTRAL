@@ -1,218 +1,74 @@
-body {
-  margin: 0;
-  font-family: 'Montserrat', Arial, sans-serif;
-  background: #f5f6f8;
-  color: #222;
-}
-header {
-  background: linear-gradient(to bottom, #232425 75%, #fff 25%);
-  color: #fff;
-  padding-bottom: 0;
-}
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px 5%;
-}
-.logo {
-  display: flex;
-  align-items: center;
-}
-.logo img {
-  width: 38px;
-  margin-right: 10px;
-}
-.brand {
-  font-weight: bold;
-  font-size: 1.2em;
-  color: #ffce00;
-  letter-spacing: 2px;
-}
-nav {
-  flex-grow: 1;
-  text-align: center;
-}
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 18px;
-  font-size: 1em;
-  position: relative;
-  padding-bottom: 2px;
-}
-nav a::after {
-  content: '';
-  display: block;
-  height: 2px;
-  background: transparent;
-  transition: background 0.3s;
-}
-nav a:hover::after {
-  background: #ffce00;
-}
-.cta-nav {
-  background: #ffce00;
-  color: #222;
-  padding: 9px 18px;
-  border-radius: 7px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background 0.2s;
-  margin-left: 20px;
-  box-shadow: 0 2px 8px rgba(255,206,0,0.15);
-}
-.cta-nav:hover {
-  background: #ffe266;
-}
-.hero {
-  padding: 55px 5% 40px 5%;
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
-}
-.hero h1 {
-  font-size: 2.2em;
-  font-weight: 800;
-  margin-bottom: 16px;
-  line-height: 1.15;
-}
-.hero p {
-  font-size: 1.18em;
-  margin-bottom: 30px;
-  color: #e6e6e6;
-}
-.hero-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-.btn {
-  display: inline-block;
-  padding: 13px 30px;
-  border-radius: 7px;
-  font-size: 1em;
-  font-weight: bold;
-  text-decoration: none;
-  margin: 0 5px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-  transition: background 0.2s, color 0.2s;
-}
-.btn-dark {
-  background: #232425;
-  color: #fff;
-}
-.btn-dark:hover {
-  background: #444;
-}
-.btn-yellow {
-  background: #ffce00;
-  color: #232425;
-}
-.btn-yellow:hover {
-  background: #ffe266;
-}
-
-section.about {
-  background: #fff;
-  padding: 38px 5% 30px 5%;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  margin-bottom: 0;
-}
-.about h2 {
-  color: #232425;
-  font-size: 1.45em;
-  font-weight: 800;
-  margin-bottom: 19px;
-}
-.about p {
-  font-size: 1.09em;
-  color: #222;
-  margin-bottom: 18px;
-}
-.about-icons {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  font-size: 1.08em;
-  color: #222;
-}
-.icon-check {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-right: 7px;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/7/73/Flat_tick_icon.svg') center/contain no-repeat;
-  vertical-align: middle;
-}
-
-section.services {
-  background: #f5f6f8;
-  padding: 40px 5% 30px 5%;
-  text-align: center;
-}
-.services h2 {
-  color: #232425;
-  font-size: 1.38em;
-  font-weight: 800;
-  margin-bottom: 33px;
-}
-.service-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 38px;
-}
-.service-item {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-  padding: 22px 22px 18px 22px;
-  width: 210px;
-  text-align: center;
-  margin-bottom: 10px;
-}
-.service-item h3 {
-  font-size: 1.09em;
-  color: #232425;
-  font-weight: 600;
-  margin-top: 18px;
-  margin-bottom: 0;
-}
-
-/* Iconos de servicios: usa SVG inline o imágenes temporales*/
-.icon-scaffold {
-  display: inline-block;
-  width: 48px;
-  height: 48px;
-  background: url('https://cdn-icons-png.flaticon.com/512/3767/3767008.png') center/contain no-repeat;
-}
-.icon-personnel {
-  display: inline-block;
-  width: 48px;
-  height: 48px;
-  background: url('https://cdn-icons-png.flaticon.com/512/1738/1738698.png') center/contain no-repeat;
-}
-.icon-truck {
-  display: inline-block;
-  width: 48px;
-  height: 48px;
-  background: url('https://cdn-icons-png.flaticon.com/512/2921/2921826.png') center/contain no-repeat;
-}
-.icon-tools {
-  display: inline-block;
-  width: 48px;
-  height: 48px;
-  background: url('https://cdn-icons-png.flaticon.com/512/1519/1519896.png') center/contain no-repeat;
-}
-
-/* Responsive */
-@media (max-width: 800px) {
-  .nav-container, .hero, section.about, section.services {
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-  }
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Andamios Austral SPA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Flat_tick_icon.svg" alt="Logo Austral" />
+        <span class="brand">AUSTRAL</span>
+      </div>
+      <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Productos</a>
+        <a href="#">Galería</a>
+        <a href="#">Seguridad</a>
+      </nav>
+      <a href="#" class="cta-nav">Cotiza con nosotros</a>
+    </div>
+    <div class="hero">
+      <h1>ANDAMIOS CERTIFICADOS,<br>RESULTADOS GARANTIZADOS</h1>
+      <p>Arriendo, montaje y desmontaje de andamios en todo Chile.</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn btn-dark">Ver catálogo</a>
+        <a href="#" class="btn btn-yellow">Contáctanos por WhatsApp</a>
+      </div>
+    </div>
+  </header>
+  <section class="about">
+    <h2>SOBRE NOSOTROS</h2>
+    <p>
+      En Andamios Austral SPA ofrecemos soluciones seguras y eficientes para trabajos en altura. 
+      Con experiencia en obras industriales, mineras y civiles, destacamos por nuestro compromiso 
+      con la calidad, seguridad y puntualidad.
+    </p>
+    <div class="about-icons">
+      <div>
+        <span class="icon-check"></span> Empresa certificada
+      </div>
+      <div>
+        <span class="icon-check"></span> Servicios a lo largo del país
+      </div>
+    </div>
+  </section>
+  <section class="services">
+    <h2>SERVICIOS</h2>
+    <div class="service-list">
+      <div class="service-item">
+        <span class="icon-scaffold"></span>
+        <h3>Arriendo de andamios y multidireccionales</h3>
+      </div>
+      <div class="service-item">
+        <span class="icon-personnel"></span>
+        <h3>Montaje y desmontaje por personal calificado</h3>
+      </div>
+      <div class="service-item">
+        <span class="icon-truck"></span>
+        <h3>Flete y logística</h3>
+      </div>
+      <div class="service-item">
+        <span class="icon-tools"></span>
+        <h3>Asesoría técnica según normativa</h3>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
   .service-list {
     flex-direction: column;
     gap: 28px;
