@@ -31,7 +31,7 @@ Para ello:
 ## 📞 Contacto
 
 - 📱 +56 9 5093 5236  
-- ✉️ contacto@andamiosaustral.cl  
+- ✉️ ventas@andamiosaustral.cl  
 
 ---
 
